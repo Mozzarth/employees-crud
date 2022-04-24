@@ -1,0 +1,35 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "version": "1.0.0",
+    "title": "EMPLEADOS",
+    "description": "Backend empleados proyecto MEAN",
+    "contact": {
+      "name": "Moises David Caicedo Corena",
+      "email": "moisescaicedo15@gmail.com"
+    }
+  },
+  "servers": [
+    {
+      "description": "prueba",
+      "url": "http://localhost:{port}/api",
+      "variables": { "port": { "enum": [3000], "default": "3000" } }
+    }
+  ],
+  "tags": [{ "name": "empleado", "description": "Routes empleado" }],
+  "paths": {
+    "/empleado": {
+      "get": {
+        "tags": ["empleado"],
+        "description": "Empleado",
+        "summary": "Summary",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  }
+}
